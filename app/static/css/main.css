@@ -492,6 +492,11 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.empty-block {
+    margin-top: 80px; /* Верхний отступ */
+    margin-bottom: 80px; /* Нижний отступ */
+  }
+
 .hero {
   width: 100%;
   min-height: 20vh;
@@ -535,10 +540,10 @@ section {
 }
 
 .hero h2 {
-  margin: 10;
-  font-size: 30px;
+  margin: 0;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 8;
+  line-height: 1.2;
   color: #fff;
   font-family: var(--font-secondary);
 }
