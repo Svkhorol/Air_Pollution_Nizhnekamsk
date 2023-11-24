@@ -32,7 +32,15 @@
 
 ![img.png](docs/img.png)
 
-## [Архитектура приложения и инструкция по его запуску на локальном сервере](app/readme.md)
+## Запуск приложения
+[Архитектура приложения и инструкция по его запуску на локальном сервере](app/readme.md)
 
-## Структура репозитория
-
+## Структура проекта
+|      |     | 
+|-------------|-------------| 
+| [`app/`](https://github.com/Svkhorol/Air_Pollution_Nizhnekamsk/tree/main/app)  | веб-приложение для визуализации данных на карте  | 
+| [`data/`](data)        | директория для хранения данных для тренировки моделей   | 
+| [`docs/`](https://github.com/Svkhorol/Air_Pollution_Nizhnekamsk/tree/main/docs)   | документация и изображения, используемые в проекте  | 
+| [`notebooks/`](https://github.com/Svkhorol/Air_Pollution_Nizhnekamsk/tree/main/notebooks)  | jupyter-ноутбуки с экспериментами и метриками    | 
+| [`hyperparams.json`](https://github.com/Svkhorol/Air_Pollution_Nizhnekamsk/blob/main/hyperparams.json)       | файл с гиперпарамерами для обучения моделей    | 
+| [`train.py`](https://github.com/Svkhorol/Air_Pollution_Nizhnekamsk/blob/main/train.py)   | скрипт для обучения моделей     | 
