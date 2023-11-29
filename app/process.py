@@ -1,4 +1,10 @@
+# # # # # # # # # # # # # # # # # # #
+# Инициализация карты главной страницы
+# # # # # # # # # # # # # # # # # # #
+
+
 import folium
+from folium.features import DivIcon
 
 
 # Список мест отбора проб
@@ -11,6 +17,15 @@ locations = {
     'ул. Ямьле, 20': [55.654578, 051.800072]
 }
 
+title = """
+    <div
+        style="font-size: 18pt;
+               color: gray;
+               background: white">
+        <b>Пункты контроля воздушной среды</b></div>
+"""
+
+
 # Создание и сохранение главной карты
 main_map = folium.Map(location=[55.613193, 051.784821], zoom_start=11.5)
 
@@ -20,5 +35,14 @@ for marker, coordinates in locations.items():
                   popup=marker,
                   icon=folium.Icon(color='green')
                   ).add_to(main_map)
+
+# Текстовый заголовок
+folium.map.Marker(
+    [55.692000, 51.630279],
+    icon=DivIcon(
+        icon_size=(250,36),
+        html=title,
+        )
+    ).add_to(main_map)
 
 main_map.save("../app/templates/main_map.html")
