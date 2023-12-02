@@ -87,15 +87,9 @@
       <!---->
       <div class="row">
         <div class="col-xl-4">
-          <!-- Дополнительный текст -->
-          <!--
-          <blockquote data-aos="fade-up" data-aos-delay="100">
-            <p>Text </p>
-          </blockquote>
-          -->
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#map_SO2" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Запуск демонстрации</span></a>
-            <a href="#about" class="btn-get-started">Запуск расчета</a>
+            <a href="" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Запуск демонстрации</span></a>
+            <a href="#" class="btn-get-started">Запуск расчета</a>
           </div>
         </div>
         <div class="col-xl-8" >
@@ -109,6 +103,27 @@
 
   <!-- ======= Folium Map ======= -->
   {% include 'main_map.html' %}
+
+
+  <!-- ======= Load Section ======= -->
+
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+          <div class="comments">
+            <div class="reply-form">
+              <h4>Получение прогноза</h4>
+              <p>Загрузите один или несколько файлов в xlsx-формате </p>
+              <form action="" method="POST" enctype="multipart/form-data">
+                <input type="file" name=file multiple accept=".xlsx">
+                <p></p>
+                <input type="submit" class="btn btn-primary" value="Загрузить и рассчитать">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Load Section -->
 
 
   <!-- ======= Footer ======= -->
