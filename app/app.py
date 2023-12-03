@@ -43,7 +43,7 @@ def main():
                 file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
                 os.remove(file_path)
 
-        return render_template('map_SO2.html')
+        return render_template('result.html')
 
 
 if __name__ == '__main__':

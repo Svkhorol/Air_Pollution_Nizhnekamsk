@@ -255,7 +255,7 @@ section {
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   color: #fff;
   font-family: var(--font-secondary);
@@ -499,7 +499,7 @@ section {
 
 .hero {
   width: 100%;
-  min-height: 20vh;
+  min-height: 12vh;
   position: relative;
   padding: 20px 0;
   z-index: 3;

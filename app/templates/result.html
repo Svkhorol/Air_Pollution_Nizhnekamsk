@@ -33,51 +33,45 @@
 
 <body class="page-index">
 
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="#" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="d-flex align-items-center">Интерактивная карта загрязнений воздуха</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#" class="active">SO<sub>2</sub></a></li>
+          <li><a href="#">H<sub>2</sub>S</a></li>
+          <li><a href="#">CO</a></li>
+          <li><a href="#">NH<sub>3</sub></a></li>
+          <li><a href="#">NO</a></li>
+          <li><a href="#">NO<sub>2</sub></a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-8" >
-          <p></p>
-          <h2 data-aos="fade-up">Интерактивная карта загрязнений воздуха</h2>
-        </div>
-        <div class="col-xl-4">
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Запуск демонстрации</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </section><!-- End Hero Section -->
 
 
   <!-- ======= Folium Map ======= -->
-  {% include 'main_map.html' %}
+  {% include 'map_SO2.html' %}
 
 
-  <!-- ======= Load Section ======= -->
-
-    <section id="blog" class="blog">
-      <div class="container" data-aos="fade-up">
-        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-          <div class="comments">
-            <div class="reply-form">
-              <h4>Получение прогноза</h4>
-              <p>Загрузите один или несколько файлов в xlsx-формате </p>
-              <form action="" method="POST" enctype="multipart/form-data">
-                <input type="file" name=file multiple accept=".xlsx">
-                <p></p>
-                <input type="submit" class="btn btn-primary" value="Загрузить и рассчитать">
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Load Section -->
-
-
-  <!-- ======= Footer ======= -->
+    <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="footer-legal">
       <div class="container">
