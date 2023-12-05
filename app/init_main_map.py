@@ -38,11 +38,11 @@ for marker, coordinates in locations.items():
 
 # Текстовый заголовок
 folium.map.Marker(
-    [55.692000, 51.630279],
+    [55.692000, 51.650000],
     icon=DivIcon(
         icon_size=(250,36),
         html=title,
         )
     ).add_to(main_map)
 
-main_map.save("../app/templates/main_map.html")
+main_map.save("../app/static/main_map.html")
