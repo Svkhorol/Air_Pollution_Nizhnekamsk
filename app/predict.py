@@ -202,7 +202,8 @@ if __name__ == "__main__":
         # Свойства объектов GeoJson
         features = []
         # Загрузка моделей для определения каждого вещества
-        catboost = pickle.load(open(f'ml_models/model_{substance[:3]}.pkl', 'rb'))
+        with open(f'ml_models/model_{substance[:3]}.pkl', 'rb') as file:
+            catboost = pickle.load(file)
 
         for X, (plant, coors) in zip(X_list, plants_dict_geojson.items()):
             pred = catboost.predict(X)

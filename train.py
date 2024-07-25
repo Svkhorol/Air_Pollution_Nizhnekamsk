@@ -166,4 +166,5 @@ for substance in substances:
     catboost.fit(X, y, early_stopping_rounds=200, verbose=0)
 
     # Сохранение обученной модели
-    pickle.dump(catboost, open(f'app/ml_models/model_{substance[:3]}.pkl', 'wb'))
+    with open(f'app/ml_models/model_{substance[:3]}.pkl', 'wb') as file:
+        pickle.dump(catboost, file)
